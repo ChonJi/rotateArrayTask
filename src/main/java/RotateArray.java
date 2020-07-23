@@ -19,7 +19,7 @@ public class RotateArray {
      * @param array
      * @param rotationsNumber
      */
-    public void rotateListElements(Integer[] array, final int rotationsNumber) {
+    public void rotateArrayElements(Integer[] array, final int rotationsNumber) {
         Collections.rotate(Arrays.asList(array), -1);
     }
 
