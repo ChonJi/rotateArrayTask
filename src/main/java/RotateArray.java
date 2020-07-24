@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.stream.IntStream;
 
 /**
  * @author Remigiusz Chomicki
@@ -20,7 +21,7 @@ public class RotateArray {
      * @param rotationsNumber
      */
     public void rotateArrayElements(Integer[] array, final int rotationsNumber) {
-        Collections.rotate(Arrays.asList(array), -1);
+        IntStream.range(0, rotationsNumber).forEach(i -> Collections.rotate(Arrays.asList(array), -1));
     }
 
 }
