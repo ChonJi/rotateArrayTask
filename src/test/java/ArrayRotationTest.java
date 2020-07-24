@@ -20,4 +20,14 @@ public class ArrayRotationTest {
         }
     }
 
+    @Test(testName = "should rotate array elements reversing whole array, RotateArray.class")
+    public void shouldRotateArrayElementsUsingLeftRotationReverseWholeArray() {
+        RotateArray rotateArray = new RotateArray();
+        for (int i = 0; i < testArray.length; i++ ) {
+            System.out.println(String.format("%s : %s", testArray[0], reflectedTestArray[0]));
+            assertEquals(testArray[0], reflectedTestArray[0]);
+            rotateArray.rotateArrayElements(testArray, 4);
+        }
+    }
+
 }
